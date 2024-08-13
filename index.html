@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Ekskul</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Formulir Pendaftaran Ekskul</h1>
+            <div class="logo">
+               <img src="download.jpeg" alt="">>
+            </div>
+        </header>
+    </section>
+
+    <form action="/">
+        <fieldset>
+            <legend>Biodata</legend>
+            
+            <label for="name">Nama Lengkap</label><br>
+            <input type="text" id="name" name="name" value=" "><br>
+            
+            <label for="Lname">Nama Panggilan</label><br>
+            <input type="text" id="Lname" name="Lname" value=" "><br>
+            
+            <label for="born">Tempat Lahir</label><br>
+            <input type="text" id="born" name="born" value=" "><br>
+            
+            <label for="birth">Tanggal Lahir</label><br>
+            <input type="date" id="birth" name="birth" value=" "><br>
+            
+            <label for="Old">Usia</label><br>
+            <input type="number" min="12" max="20" id="Old" name="Old" value=" "><br>
+            
+            <label for="gender">Jenis Kelamin</label><br>
+            <input type="radio" id="male" name="gender" value="Laki-laki">
+            <label for="male">Laki-laki</label><br>
+            <input type="radio" id="female" name="gender" value="Perempuan">
+            <label for="female">Perempuan</label><br>
+
+            <label for="Reli">Agama</label><br>
+            <select name="Reli" id="Reli">
+                <option value="">pilih</option>
+                <option value="Islam">Islam</option>
+                <option value="Protestan">Kristen Protestan</option>
+                <option value="Khatolik">Kristen Khatolik</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">konghucu</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Penghayat">Penghayat Kepercayaan</option>
+            </select><br>
+
+            <label for="Class">Kelas</label><br>
+            <input type="text" id="Class" name="Class" value=" "><br>
+        </fieldset>
+    </form>
+
+    <form action=" ">
+        <fieldset>
+            <legend>Alamat</legend>
+
+            <label for="live">Alamat Lengkap</label><br>
+            <textarea name="live" cols="21" rows="1"></textarea><br>
+            <label for="rt">RT</label>
+            <input type="text" id="rt" name="rt"><br>
+            <label for="rw">RW</label>
+            <input type="text" id="rw" name="rw"><br>
+            <label for="desa">Desa/keluruhan</label>
+            <select name="desa" id="desa">
+                <option value="">pilih</option>
+                <option value="Islam">Cipada</option>
+                <option value="Protestan">Jambudipa</option>
+                <option value="Khatolik">Padaasih</option>
+                <option value="Buddha">PasirLangu</option>
+                <option value="Konghucu">Tugumukti</option>
+                <option value="Hindu">Sadang Mekar</option>
+            </select><br>
+
+            <label for="camat">Kecamatan</label>
+            <select name="desa" id="desa">
+                <option value="">pilih</option>
+                <option value="Cisarua">Cisarua</option>
+                <option value="Parongpong">Parongpong</option>
+                <option value="Lembang">Lembang</option>
+                <option value="Ngamprah">Ngamprah</option>
+                <option value="Padalarang">Padalarang</option>
+                <option value="Cikalong">Cikalong Wetan</option>
+                <option value="Batujajar">Batujajar</option>
+            </select><br>
+
+            <label for="kabupaten_kota">Kabupaten/Kota:</label>
+            <select id="kabupaten_kota" name="kabupaten_kota">
+                <option value="">Pilih</option>
+                <option value="Kab. Bandung Barat">Kab. Bandung Barat</option>
+                <option value="Kab. Bandung">Kab. Bandung</option>
+                <option value="Kab. Cianjur">Kab. Cianjur</option>
+                <option value="Kab. Sumedang">Kab. Sumedang</option>
+                <option value="Kota Bandung">Kota Bandung</option>
+                <option value="Kota Cimahi">Kota Cimahi</option>
+            </select><br>
+
+            <label for="provinsi">Provinsi:</label>
+                <select id="provinsi" name="provinsi">
+                    <option value="">Pilih</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="Jawa Timur">Jawa Timur</option>
+                    <option value="DKI Jakarta">DKI Jakarta</option>
+                </select><br>
+                <label for="kode_pos">Kode Pos:</label>
+                <input type="text" id="kode_pos" name="kode_pos"><br>
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <legend>Kontak</legend>
+        <label for="tlp">No Telepon:</label>
+        <input type="tel" id="tlp" name="tlp"><br><br>
+        <label for="eml">Email:</label>
+        <input type="email" id="eml" name="eml">
+    </fieldset>
+
+    <div class="container">
+        <h2>Akun</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirmPassword">Konfirmasi Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+            <div class="error" id="errorMessage"></div>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (password !== confirmPassword) {
+                errorMessage.textContent = 'Password dan konfirmasi password tidak cocok.';
+            } else {
+                errorMessage.textContent = '';
+                alert('Akun berhasil dibuat!');
+              
+            }
+        });
+    </script>
+    <fieldset>
+        <legend>Ekstrakulikuler</legend>
+        <input list="eskul" name="eskul">
+        <datalist id="eskul">
+            <option value="Karate"></option>
+            <option value="Silat"></option>
+            <option value="Basket"></option>
+            <option value="Futsal"></option>
+            <option value="PMR"></option>
+            <option value="Sispakala"></option>
+            <option value="Rohis"></option>
+            <option value="Paskibra"></option>
+            <option value="Voli"></option>
+            <option value="Seni tari"></option>
+            <option value="Pramuka"></option>
+            <option value="Taekwondo"></option>
+            <option value="Sastra Sunda"></option>
+            <option value="Seni musik"></option>
+            <option value="Karawitan"></option>
+        </datalist>
+    </fieldset>
+
+    <fieldset>
+
+    <legend>Upload Persyaratan</legend>
+        <label for="foto">Upload pas foto 3x4</label<br>
+            <input type="file" id="foto" name="foto">
+            <img id="preview" src="" alt="Preview">
+            
+            <script>
+            const fotoInput = document.getElementById('foto');
+            const previewImg = document.getElementById('preview');
+            
+            fotoInput.addEventListener('change', (e) => {
+                const file = e.target.files[0];
+                const reader = new FileReader();
+            
+                reader.onload = (event) => {
+                previewImg.src = event.target.result;
+                };
+            
+                reader.readAsDataURL(file);
+            });
+            </script><br><br>
+        
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+<div class="copyright">
+    copyright by &copy; 2024 Adhyasta Muhammad Pradipa
+</div>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const errorMessage = document.getElementById('errorMessage');
+
+        if (password !== confirmPassword) {
+            errorMessage.textContent = 'Password dan konfirmasi password tidak cocok.';
+        } else {
+            errorMessage.textContent = '';
+            alert('Akun berhasil dibuat!');
+            
+        }
+    });
+</script>
+
+</body>
+</html>

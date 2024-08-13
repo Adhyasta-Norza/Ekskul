@@ -1,0 +1,19 @@
+.logo{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.img{
+    width: 50%;
+    margin-right: 20px;
+    width: 100px;
+    height: auto;
+}
+h1 {
+    text-align: center;
+    text-decoration: none;
+}
+body {
+    color: black;
+    background-color: aquamarine;
+}
